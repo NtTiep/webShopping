@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project WebStore Follow By iVietTech</title>
+    <link rel="stylesheet" href="./themify-icons-font/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <!--mobile -->
+        <div class="nav-mobile">
+            <div class="icon-mobile" id="btnMenu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="item_menu" id="menuTop">
+                <form>
+                    <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                </ul>
+
+            </div>
+        </div> 
+        <!-- end mobile -->
+        <nav>
+            <div class="grid">      
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item navbar__item--has-qr navbar__item--separate"> 
+                        Vào cửa hàng trên ứng dụng 
+                            <div class="header__qr">
+                                <img src="./imgs/QRcode.png" alt="QR Code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./imgs/google-play.png" style="background-color:white;"  alt="Google Play" class="header__qr-download">                                        
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./imgs/app-store.png"  alt="App Store" class="header__qr-download">                          
+                                    </a>
+                                </div>
+                            </div>
+                    </li>
+                        <li class="navbar__item" >
+                            <span class="navbar-title--no-pointer">Kết nối</span>
+                            <a href="" class="navbar__icon--link">
+                                <i class="navbar__icon fa-brands fa-facebook"></i>
+                                <i class="navbar__icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="" class="navbar__link ">
+                                <i class="navbar__icon fa-solid fa-bell"></i>
+                                Thông Báo
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__link">
+                                <i class="navbar__icon fa-solid fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="navbar__item navbar__item--bold navbar__item--separate">Đăng kí </li>
+                        <li class="navbar__item navbar__item--bold">Đăng nhập</li>
+                    </ul>
+                </nav>
+            </div>
+            <form>
+                <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            <!-- The Modal -->
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">  
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">VNĐ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- content -->
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./imgs/Galaxy-S22-Ultra-Burgundy-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Samsung S22 Ultra 5G</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">25000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./imgs/iphone-xi-do-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">iPhone 11</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">12990đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./imgs/oppo-reno7-z-5g-thumb-1-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Oppo Reno 7Z 5G</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">15990đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./imgs/realme-c35-thumb-new-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Realme C35</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">8900đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./imgs/iphone-13-pro-max-xanh-la-thumb-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">iPhone 13 Promax</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">21990đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./imgs/samsung-galaxy-a52s-5g-mint-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Samsung Galaxy A52s 5G</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">9800đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./imgs/oppo-find-x5-pro-den-thumb-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Oppo Find X5 Pro</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">12950đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./imgs/samsung-galaxy-z-fold-3-silver-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Samsung Galaxy Z-fold 3</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">50000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./imgs/samsung-galaxy-z-flip-3-cream-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Samsung Galaxy Z-Flip 3</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">23000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+     <!-- footer -->
+     <footer>
+        <div class="footer-item">
+            <div class="img-footer">
+                <img style="width: 100px; height: 100px;"  src="https://img.gotit.vn/compress/brand/2020/06/1592997908_AEzaE.png" alt="" />
+            </div>
+            <div class="social-footer">
+                <p>Liên hệ với chúng tôi:</p>
+                <li><a target="_blank" href="https://www.facebook.com/minewhil/">
+                        <i class="navbar__icon fa-brands fa-facebook" aria-hidden="true"></i>
+                    </a></li>
+                <li><a target="_blank" href="https://github.com/NtTiep">
+                        <i class="navbar__icon fa-brands fa-github" aria-hidden="true"></i>
+                    </a></li>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body> 
